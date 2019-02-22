@@ -10,7 +10,7 @@ window.data = {
       for (const key in yearFound) {
         if (yearFound.hasOwnProperty(key)) {
           const element = yearFound[key];
-          if (key == userValue ) {
+          if (  key == userValue) {
             yearResult = yearValue.substr(0, 4);
             userResult = element;
           } //for if If
