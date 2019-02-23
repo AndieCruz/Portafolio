@@ -33,4 +33,8 @@ window.data = {
       }) //ForEach
       return yearFind;
   },//Order
+tableOrder: () => {
+  yearFind.sort()
+}
+
 }; //window
