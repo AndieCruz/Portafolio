@@ -34,7 +34,7 @@ const printTable = (yearFind) =>{
     }
 
 
-  const column = "<tr><td>"+yearFind[0]+"</td></tr><td>"+yearFind[i][1]+"</td><td>"+yearFind[2]+"</td>"
+  const column = "<tr><td>"+yearFind[0]+"</td></tr><td>"+yearFind[i][0]+"</td><td>"+yearFind[i][1]+"</td>"
   const row = document.createElement("tr");
   row.innerHTML= column;
   document.getElementById("table").appendChild(row);
