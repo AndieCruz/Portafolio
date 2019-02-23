@@ -16,33 +16,62 @@ const table = document.getElementById('table');
 searchbutton.addEventListener("click", () => {
   let yearValue = yearbutton.value;
   let userValue = userbutton.value;
+
+const printTable = (yearFind) =>{
+  document.getElementById('table').innerHTML = "";
+  for (let i = 1; i <yearFind.length; i++) {
+    // Crea las hileras de la tabla
+    let hilera = document.createElement("tr");
+    console.log(yearFind);
+    for (let j = 0; j < 3; j++) {
+      // // Crea un elemento <td> y un nodo de texto, haz que el nodo de
+      // // texto sea el contenido de <td>, ubica el elemento <td> al final
+      // // de la hilera de la tabla
+      // let celda = document.createElement("th");
+      // let textoCelda = document.createTextNode("celda en la hilera "+i+", columna "+j);
+      // celda.appendChild(textoCelda);
+      // hilera.appendChild(celda);
+    }
+
+
+  const column = "<tr><td>"+yearFind[0]+"</td></tr><td>"+yearFind[i][1]+"</td><td>"+yearFind[2]+"</td>"
+  const row = document.createElement("tr");
+  row.innerHTML= column;
+  document.getElementById("table").appendChild(row);
+console.log(yearFind);
+}
+}
+
+
   if(userValue === 'all'){
-    resultsecc.innerHTML = '';
     const resultDatos = window.data.order(injuriesBy, yearValue, userValue);
-    table.innerHTML = `          <table>
-                <tr>
-                  <th> AÑO </th>
-                  <th> TIPO DE HERIDO </th>
-                  <th> TOTAL </th>
-                  </tr>
-                  <tr>
-                    <td rowspan="4"> ${resultDatos[0]} </td>
-                    <td> MOTOCICLISTA </td>
-                    <td> ${resultDatos[1]} </td>
-                  </tr>
-                  <tr>
-                    <td> CICLISTA </td>
-                    <td> ${resultDatos[2]} </td>
-                  </tr>
-                  <tr>
-            <td> PEATON </td>
-            <td> ${resultDatos[3]} </td>
-        </tr>
-        <tr>
-          <td> AUTOMOVILISTAS </td>
-          <td> ${resultDatos[4]} </td>
-      </tr>
-              </table>`
+    printTable(resultDatos);
+  //document.getElementById('table').innerHTML = "";
+
+    // table.innerHTML = `          <table>
+    //             <tr>
+    //               <th> AÑO </th>
+    //               <th> TIPO DE HERIDO </th>
+    //               <th> TOTAL </th>
+    //               </tr>
+    //               <tr>
+    //                 <td rowspan="4"> ${resultDatos[0]} </td>
+    //                 <td> MOTOCICLISTA </td>
+    //                 <td> ${resultDatos[1]} </td>
+    //               </tr>
+    //               <tr>
+    //                 <td> CICLISTA </td>
+    //                 <td> ${resultDatos[2]} </td>
+    //               </tr>
+    //               <tr>
+    //         <td> PEATON </td>
+    //         <td> ${resultDatos[3]} </td>
+    //     </tr>
+    //     <tr>
+    //       <td> AUTOMOVILISTAS </td>
+    //       <td> ${resultDatos[4]} </td>
+    //   </tr>
+    //           </table>`
   } else {
     table.innerHTML = '';
     const resultData = window.data.consult(injuriesBy, yearValue, userValue);

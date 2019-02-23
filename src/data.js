@@ -19,15 +19,16 @@ window.data = {
     return [yearResult, userResult]
   }, //Consult
   order: (injuriesBy, yearValue, userValue) => {
-    let yearFind = "";
+    let yearFind = [];
     injuriesBy.forEach(element => {
       let year = element.Year;
-      let moto = element.Total_Injured_Persons_Motorcyclists;
-      let bike = element.Total_Injured_Persons_Pedalcyclists;
-      let walk = element.Total_Injured_Persons_Pedestrians;
-      let transit = element.Total_Injured_Persons_Transit_Total;
+      let moto = ["MOTOCICLISTA",element.Total_Injured_Persons_Motorcyclists];
+      let bike = ["CICLISTA",element.Total_Injured_Persons_Pedalcyclists];
+      let walk = ["PEATON",element.Total_Injured_Persons_Pedestrians];
+      let transit = ["AUTOMOVILISTAS",element.Total_Injured_Persons_Transit_Total];
         if (yearValue === year && userValue === "all") {
-            yearFind = [year.substr(0,4), moto, bike, walk, transit];
+            yearFind.push(year.substr(0,4), moto, bike, walk, transit);
+            console.log(yearFind);
         }
       }) //ForEach
       return yearFind;
