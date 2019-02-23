@@ -20,43 +20,29 @@ searchbutton.addEventListener("click", () => {
 //Se imprime la tabla con los datos da la función order
 const printTable = (yearFind) =>{
   document.getElementById('table').innerHTML = "";
+  table.innerHTML= `<table>
+                <tr>
+                 <th colspan='2'> AÑO </th>
+                 </tr>
+                 <tr>
+                 <td colspan='2'>${yearFind[0]}</td>
+                 <tr>
+                 <th> TIPO DE HERIDO </th>
+                 <th> TOTAL </th>
+                 </tr>
+                 </table>`
+
   for (let i = 1; i <yearFind.length; i++) {
-  const column = "<tr><td>"+yearFind[0]+"</td></tr><td>"+yearFind[i][0]+"</td><td>"+yearFind[i][1]+"</td>"
+  const column = "<tr><td>"+yearFind[i][0]+"</td><td>"+yearFind[i][1]+"</td></tr>"
   const row = document.createElement("tr");
   row.innerHTML= column;
   document.getElementById("table").appendChild(row);
-}
+  }
 }
 
   if(userValue === 'all'){
     const resultTable = window.data.order(injuriesBy, yearValue, userValue);
     printTable(resultTable);
-  //document.getElementById('table').innerHTML = "";
-
-    // table.innerHTML = `          <table>
-    //             <tr>
-    //               <th> AÑO </th>
-    //               <th> TIPO DE HERIDO </th>
-    //               <th> TOTAL </th>
-    //               </tr>
-    //               <tr>
-    //                 <td rowspan="4"> ${resultDatos[0]} </td>
-    //                 <td> MOTOCICLISTA </td>
-    //                 <td> ${resultDatos[1]} </td>
-    //               </tr>
-    //               <tr>
-    //                 <td> CICLISTA </td>
-    //                 <td> ${resultDatos[2]} </td>
-    //               </tr>
-    //               <tr>
-    //         <td> PEATON </td>
-    //         <td> ${resultDatos[3]} </td>
-    //     </tr>
-    //     <tr>
-    //       <td> AUTOMOVILISTAS </td>
-    //       <td> ${resultDatos[4]} </td>
-    //   </tr>
-    //           </table>`
   } else {
     table.innerHTML = '';
     const resultData = window.data.consult(injuriesBy, yearValue, userValue);

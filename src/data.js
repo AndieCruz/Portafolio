@@ -28,13 +28,12 @@ window.data = {
       let transit = ["AUTOMOVILISTAS",element.Total_Injured_Persons_Transit_Total];
         if (yearValue === year && userValue === "all") {
             yearFind.push(year.substr(0,4), moto, bike, walk, transit);
-            console.log(yearFind);
         }
       }) //ForEach
       return yearFind;
   },//Order
-tableOrder: () => {
-  yearFind.sort()
-}
+// tableOrder: () => {
+//   yearFind.sort()
+// }
 
 }; //window
