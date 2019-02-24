@@ -19,7 +19,7 @@ window.data = {
     return [yearResult, userResult]
   }, //Consult
   order: (injuriesBy, yearValue, userValue) => {
-    let yearFind = [];
+    let arrayOrder = [];
     injuriesBy.forEach(element => {
       let year = element.Year;
       let moto = ["MOTOCICLISTA",element.Total_Injured_Persons_Motorcyclists];
@@ -27,13 +27,23 @@ window.data = {
       let walk = ["PEATON",element.Total_Injured_Persons_Pedestrians];
       let transit = ["AUTOMOVILISTAS",element.Total_Injured_Persons_Transit_Total];
         if (yearValue === year && userValue === "all") {
-            yearFind.push(year.substr(0,4), moto, bike, walk, transit);
+            arrayOrder.push(year.substr(0,4), moto, bike, walk, transit);
         }
       }) //ForEach
-      return yearFind;
+      return arrayOrder;
   },//Order
-// tableOrder: () => {
-//   yearFind.sort()
-// }
+  orderByAsc: (arrayOrder, order) => { //funcion orden ascendente y descendente
 
+      if (order === "asc") {
+        arrayOrder.sort(function (a, b) {
+          return a[1] - b[1];
+
+        });
+      } else if (order === "desc") {
+        arrayOrder.sort(function (a, b) {
+          return b[1] - a[1];
+        });
+      }
+      return arrayOrder;
+    }//orderByAsc
 }; //window
