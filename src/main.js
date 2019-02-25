@@ -23,19 +23,19 @@ searchbutton.addEventListener("click", () => {
 //Se imprime la tabla con los datos da la función order
 const printTable = (arrayOrder) =>{
   document.getElementById('table').innerHTML = "";
-  table.innerHTML= `<table>
+  table.innerHTML= `
                 <tr>
                  <th colspan='2'> AÑO </th>
                  </tr>
                  <tr>
-                 <td colspan='2'>${arrayOrder[0]}</td>
+                 <td colspan='2'>${yearValue.substr(0,4)}</td>
                  <tr>
                  <th> TIPO DE HERIDO </th>
                  <th> TOTAL </th>
                  </tr>
-                 </table>`
+                 `
 
-  for (let i = 1; i <arrayOrder.length; i++) {
+  for (let i = 0; i <arrayOrder.length; i++) {
   const column = "<tr><td>"+arrayOrder[i][0]+"</td><td>"+arrayOrder[i][1]+"</td></tr>"
   const row = document.createElement("tr");
   row.innerHTML= column;
@@ -59,6 +59,6 @@ const printTable = (arrayOrder) =>{
   } else {
     table.innerHTML = '';
     const resultData = window.data.consult(injuriesBy, yearValue, userValue);
-    resultArea.innerHTML = `<b>Año:</b>${resultData[0]} <br><b>Total de heridos:</b>${resultData[1]}`;
+    resultArea.innerHTML = `<b>En el año </b>${resultData[0]} <br><b>hubo un total de heridos de </b>${resultData[1]}`;
   }
 });
