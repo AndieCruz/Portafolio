@@ -12,7 +12,8 @@ const injuriesBy = window.INJURIES;
 const table = document.getElementById('table');
 //Declaramos select de ordenaenar
 const order = document.getElementById('order');
-
+//Constante que contiene el resultado de la tabla en arreglo
+let arrOrderCheat = [];
 
 //Función al botón de consulta. Toma los inputs y Obtiene su Valor. Ejecuta la función consult y muestra el resultado.
 searchbutton.addEventListener("click", () => {
@@ -42,23 +43,22 @@ const printTable = (arrayOrder) =>{
   }
 }
 
-  const orderByAscent = (arrayOrder) => { //funcion ordenar asc/desc
+  const orderByAscent = () => { //funcion ordenar asc/desc
   let orderSelect = order.value;
-
-    // console.log(arrayOrder);
-     const orderObj = window.data.orderByAsc(order, arrayOrder)
-  console.log(orderObj);
-  //   prtOrder(orderObj)
+     const orderObj = window.data.orderByAsc(arrOrderCheat, orderSelect)
+     printTable(orderObj)
    }
   order.addEventListener('change', orderByAscent); //funcion recorre el objeto*/
 
 
   if(userValue === 'all'){
+    resultArea.innerHTML = '';
     const resultTable = window.data.order(injuriesBy, yearValue, userValue);
     printTable(resultTable);
+    arrOrderCheat = resultTable
   } else {
     table.innerHTML = '';
     const resultData = window.data.consult(injuriesBy, yearValue, userValue);
-    resultArea.innerHTML = `<b>Año:</b>${resultData[0]} <b>Total de heridos:</b>${resultData[1]}`;
+    resultArea.innerHTML = `<b>Año:</b>${resultData[0]} <br><b>Total de heridos:</b>${resultData[1]}`;
   }
 });

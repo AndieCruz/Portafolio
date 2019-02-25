@@ -159,18 +159,18 @@ footer {
 
 .button {
   margin: 5%;
-  padding: 2%;
-  text-align: center;
-  background-color: #ddd;
-  border: none;
-  color: black;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 16px;
+padding: 2%;
+text-align: center;
+background-color: #ddd;
+border: none;
+color: black;
+padding: 6px 14px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+margin: 4px 2px;
+cursor: pointer;
+border-radius: 6px;
 }
 
 .total {

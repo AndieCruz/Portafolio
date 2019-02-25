@@ -28,22 +28,28 @@ window.data = {
       let transit = ["AUTOMOVILISTAS",element.Total_Injured_Persons_Transit_Total];
         if (yearValue === year && userValue === "all") {
             arrayOrder.push(year.substr(0,4), moto, bike, walk, transit);
+            // dataOrder = arrayOrder.sort(function (a,b){
+            //   return a[1] - b[1];
+            //
+            // })
+              //console.log(dataOrder);
         }
       }) //ForEach
       return arrayOrder;
   },//Order
-  orderByAsc: (arrayOrder, order) => { //funcion orden ascendente y descendente
-
-      if (order === "asc") {
-        arrayOrder.sort(function (a, b) {
+  orderByAsc: (arrayOrder, order) => {
+      if (order === "des") {
+        arrayOrder.sort ((a, b) => {
           return a[1] - b[1];
-
         });
-      } else if (order === "desc") {
-        arrayOrder.sort(function (a, b) {
+      } else if (order === "asc") {
+        arrayOrder.sort ((a, b) => {
           return b[1] - a[1];
-        });
+          });
+console.log(arrayOrder)
       }
+
+
       return arrayOrder;
     }//orderByAsc
 }; //window
