@@ -1,6 +1,7 @@
 nav {
   display: block;
 }
+
 header {
   background: white;
   display: inline-block;
@@ -9,19 +10,52 @@ header {
   top: 0;
   left: 0;
 }
+
 figure {
   margin: 0%;
   display: inline-block;
 }
 
-#menu {
-  width: 10%;
-  height: auto;
-  vertical-align: top;
-  padding: 2%;
-  padding-top: 9%;
-  float: right;
-  margin: 0%;
+td, th {
+ border: 1px solid #ffffff;
+ background: black;
+ color: aliceblue;
+ text-align: center;
+ font-family: sans-serif;
+ padding: 2%;
+ width: 1%;
+}
+
+th{
+  color: #eb008b;
+}
+
+h2 {
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+p {
+  color: white;
+  font-family: sans-serif;
+  text-align: justify;
+  padding: 10%;
+  font-size: 14px;
+  margin: 0;
+}
+
+table{
+  width: 50%;
+  text-align: center;
+  margin: 1% 1% 1% 10%;
+}
+
+footer {
+  background-color: #231f20;
+  width: auto;
+  height: 100%;
+  text-align: center;
 }
 
 .logo {
@@ -82,21 +116,8 @@ figure {
   width: 100%;
   margin-block-start: 3%;
   margin-block-end: 3%;
-
 }
-   td, th {
-    border: 1px solid #ffffff;
-    background: black;
-    color: aliceblue;
-    text-align: center;
-    font-family: sans-serif;
-    padding: 2%;
-    width: 1%;
-   }
 
-   th{
-     color: #eb008b;
-   }
 
    .checkbox {
      float: right;
@@ -136,28 +157,21 @@ figure {
   padding: 5%;
 }
 
-#consulta{
-  color: white;
-  text-decoration: none;
-  display: inline-block;
-}
-
 .button {
   margin: 5%;
-  padding: 2%;
-  text-align: center;
-  background-color: #ddd;
-  border: none;
-  color: black;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 16px;
+padding: 2%;
+text-align: center;
+background-color: #ddd;
+border: none;
+color: black;
+padding: 6px 14px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+margin: 4px 2px;
+cursor: pointer;
+border-radius: 6px;
 }
-
 
 .total {
   background-color: #231f20;
@@ -166,30 +180,6 @@ figure {
   padding: 5%;
   color: #eb008b;
   display: block;
-}
-
-h2 {
-  color: white;
-  font-family: sans-serif;
-  text-align: center;
-}
-
-p {
-  color: white;
-  font-family: sans-serif;
-  text-align: justify;
-  padding: 10%;
-  font-size: 14px;
-  margin: 0;
-}
-
-#totalInjured {
-  color: #eb008b;
-  font-family: sans-serif;
-  padding: 10px;
-  font-size: 28px;
-  text-align: center;
-  margin: 0%;
 }
 
 .icon {
@@ -203,11 +193,6 @@ p {
   background-color: white;
   width: auto;
   height: 100%;
-}
-
-#knowMore {
-  color: black;
-  margin-top: 50px;
 }
 
 .image {
@@ -254,12 +239,6 @@ p {
   font-family: sans-serif;
 }
 
-table{
-  width: 50%;
-  text-align: center;
-  margin: 1% 1% 1% 10%;
-}
-
 .photos {
   background-color: #eb008b;
   width: auto;
@@ -271,21 +250,6 @@ table{
 
 .question{
   padding: 5%;
-}
-
-footer {
-  background-color: #231f20;
-  width: auto;
-  height: 100%;
-  text-align: center;
-
-}
-
-#footer {
-  font-size: 60%;
-  text-align: center;
-  vertical-align: bottom;
-  padding-top: 8%;
 }
 
 .redes {
@@ -300,7 +264,62 @@ footer {
   margin-top: 8%;
 }
 
+#footer {
+  font-size: 60%;
+  text-align: center;
+  vertical-align: bottom;
+  padding-top: 8%;
+}
+
+#knowMore {
+  color: black;
+  margin-top: 50px;
+}
+
+#totalInjured {
+  color: #eb008b;
+  font-family: sans-serif;
+  padding: 10px;
+  font-size: 28px;
+  text-align: center;
+  margin: 0%;
+}
+
+#consulta{
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+}
+
+#menu {
+  width: 10%;
+  height: auto;
+  vertical-align: top;
+  padding: 2%;
+  padding-top: 9%;
+  float: right;
+  margin: 0%;
+}
+
 @media (min-width: 1281px) {
+  p {
+    color: white;
+    font-family: sans-serif;
+    padding: 1%;
+    font-size: 14px;
+  }
+
+  header{
+    width: 100%;
+    }
+
+    h3{
+      font-size: x-large;
+    }
+
+    h2{
+      font-size: -webkit-xxx-large;
+    }
 
 .logo{
   width: 4%;
@@ -315,13 +334,6 @@ footer {
     padding: 1%;
     color: #eb008b;
     display: block;
-  }
-
-  p {
-    color: white;
-    font-family: sans-serif;
-    padding: 1%;
-    font-size: 14px;
   }
 
   .icon {
@@ -345,14 +357,6 @@ footer {
     padding-top: 8%;
   }
 
-  header{
-    width: 100%;
-    }
-
-    h3{
-      font-size: x-large;
-    }
-
 .button1{
   text-align: center;
     background: #231f20;
@@ -360,19 +364,6 @@ footer {
     height: auto;
     border-radius: 3%;
     padding: 3%;
-}
-#infoSecI{
-  width: 25%;
-}
-
-#totalParraph{
-  width: 42%;
-  padding: 3%;
-  margin: 1% 1% 1% 24%;
-}
-
-h2{
-  font-size: -webkit-xxx-large;
 }
 
 .final{
@@ -399,6 +390,16 @@ h2{
   width: 32%;
 }
 
+#infoSecI{
+  width: 25%;
+}
+
+#totalParraph{
+  width: 42%;
+  padding: 3%;
+  margin: 1% 1% 1% 24%;
+}
+
 }
 
 
@@ -406,6 +407,10 @@ h2{
 
   header{
     width: 100%;
+    }
+
+    p{
+      padding: 0%;
     }
 
   .logo {
@@ -427,23 +432,6 @@ h2{
     top: 19px;
   }
 
-  #infoSecI{
-    font-size: 14px;
-  display: inline-block;
-  float: left;
-  }
-
-  #map{
-    display: inline-block;
-        width: 70%;
-        height: auto;
-        padding: 1.5%;
-        padding-block-start: 3%
-  }
-
-p{
-  padding: 0%;
-}
   .image{
     display: inline-block;
     width: 32%;
@@ -455,6 +443,20 @@ text-align: center;
 }
   .question{
     padding: 1%;
+  }
+
+  #infoSecI{
+    font-size: 14px;
+    display: inline-block;
+    float: left;
+  }
+
+  #map{
+    display: inline-block;
+        width: 70%;
+        height: auto;
+        padding: 1.5%;
+        padding-block-start: 3%
   }
 
 }

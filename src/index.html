@@ -23,7 +23,7 @@
               <li><a href="#total" class="nav__item">HECHOS</a></li>
               <li><a href="#know" class="nav__item">CONOCE MÁS</a></li>
               <li><a href="#photos" class="nav__item">GALERIA</a></li>
-              <li><a href="#fqa" class="nav__item">FQA's</a></li>
+              <li><a href="#fqa" class="nav__item">FAQ's</a></li>
             </ul>
           </nav>
       </figure>
@@ -49,6 +49,7 @@
       </div>
 
     </section>
+
 
     <section id="total" class="total">
       <h2> HECHOS FUNDAMENTALES </h2>
@@ -102,21 +103,27 @@
         <div class="button">
           <input id="search" class="button" type="button" value="CONSULTA">
         </div>
+        <select id="order" name="order" class="selector">
+          <option selected value="0"> ORDENAR </option>
+          <option value="des">Menos heridos</option>
+          <option value="asc">Más heridos</option>
+        </select>
         </form>
             <section id="result" class="result"></section>
-            <section id="tableData" class="tableData">
-
-          <div id="table">
-          </div>
-
-          </section>
+            <div id="tableData" class="tableData">
+              <table>
+              <tbody id="table">
+              </tbody>
+            </table>
+        </div>
     </section>
+
 
       <section id="photos" class="photos">
         <img src="images/way.png" alt="PuntoMuerto" class="image">
        <img src="images/cros.png" alt="PuntoMuerto" class="image">
         <img src="images/incident.png" alt="PuntoMuerto" class="image">
-        <h2 id="fqa"> FQA </h2>
+        <h2 id="fqa"> FAQ's </h2>
         <p class ="question"> <b> ¿Qué es punto muerto?</b><br>
         Es una campaña de prevención contra accidentes de transito en adolescentes
           que tiene como objetivo concientizar y prevenir los accidentes que comprometen
