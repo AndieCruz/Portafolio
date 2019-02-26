@@ -210,18 +210,21 @@ border-radius: 6px;
   padding: 0.5%;
   }
 
+  .puntoImage{
+
+  }
+
 .consulta  {
     text-align: center;
   }
 
 .select {
   margin-top: 4%;
-  padding: 2%;
   text-align: center;
 }
 
 .selector {
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 2%;
   background: #f2f1f0;
   border-color: transparent;
@@ -402,15 +405,50 @@ border-radius: 6px;
 
 }
 
+@media (min-width:1280px) and (max-width: 1380px){
+  .puntoImage {
+    width: 48%;
+    height: auto;
+    margin-left: -50%;
+}
 
-@media (min-width: 1024px) and (max-width: 1380px) {
+.menu-toogle::before {
+    font-size: 47px;
+    }
+
+    .logo {
+    width: 11%;
+    }
+
+    .info {
+    margin-block-start: 3%;
+}
+
+.tableData{
+      margin-left: 15%;
+}
+
+#map {
+    width: 59%;
+    margin-block-start: -12%;
+    margin-left: 6%;
+}
+#infoSecI {
+  width: 27%;
+  display: inline-block;
+  float: left;
+  margin-block-start: 11%;
+}
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
 
   header{
     width: 100%;
     }
 
     p{
-      padding: 0%;
+      padding: 5%;
     }
 
   .logo {
@@ -421,6 +459,16 @@ border-radius: 6px;
 
 .info{
   margin-block-start: 0%;
+}
+
+.final {
+    width: 46%;
+  }
+
+.icon {
+    width: 11%;
+    height: auto;
+    padding: 5%;
 }
 
   .sidebar {
@@ -438,12 +486,25 @@ border-radius: 6px;
   }
 
 .map{
-  display: inline-block;
 text-align: center;
 }
   .question{
     padding: 1%;
   }
+
+.tableData{
+  height: auto;
+width: 100%;
+margin-block-start: 3%;
+margin-block-end: 3%;
+margin-left: 15%;
+}
+
+.puntoImage {
+    width: 54%;
+    height: auto;
+    margin-left: 50%;
+}
 
   #infoSecI{
     font-size: 14px;
@@ -453,12 +514,20 @@ text-align: center;
 
   #map{
     display: inline-block;
-        width: 70%;
-        height: auto;
-        padding: 1.5%;
-        padding-block-start: 3%
-  }
+    width: 68%;
+    height: auto;
+    padding: 1.5%;
+    padding-block-start: 0%;
+}
 
+  #footer {
+      font-size: 68%;
+      text-align: center;
+      vertical-align: bottom;
+      padding-top: 0%;
+      padding: 3%;
+      padding-bottom: 0%;
+  }
 }
 
 @media (min-width: 767px) and (max-width: 1024px) {
@@ -497,6 +566,29 @@ text-align: center;
     width: 32%;
   }
 
+  .puntoImage{
+    display: inline-block;
+width: 40%;
+margin-left: 45%;
+margin-block-start: 10%;
+  }
+
+  .tableData{
+    height: auto;
+  width: 100%;
+  margin-block-start: 3%;
+  margin-block-end: 3%;
+  margin-left: 15%;
+  }
+
+  #map{
+    display: inline-block;
+  width: 73%;
+  height: auto;
+  padding: 12.5%;
+  padding-block-start: 0%;
+  }
+
 }
 
 @media (min-width: 300px) and (max-width: 767px) {
@@ -504,6 +596,7 @@ text-align: center;
   header{
     width: 100%;
   }
+
 
   .logo {
     width: 10%;
@@ -515,4 +608,24 @@ text-align: center;
   right: -435px;
   padding-top: 47px;
   }
+
+
+  .puntoImage{
+    width: 77%;
+  margin-block-start: 9%;
+  margin-left: 12%;
+  }
+
+  .tableData{
+        width: 145%;
+  }
+#map{
+      margin-block-start: -6%;
+          margin-block-end: 3%;
+}
+
+#footer{
+  padding: 3%;
+}
+
 }

@@ -43,12 +43,12 @@ const printTable = (arrayOrder) =>{
   }
 }
 
-  const orderByAscent = () => { //funcion ordenar asc/desc
+  const orderBySelect = () => { //funcion ordenar asc/desc
   let orderSelect = order.value;
-     const orderObj = window.data.orderByAsc(arrOrderCheat, orderSelect)
-     printTable(orderObj)
+     const orderArray = window.data.orderByAsc(arrOrderCheat, orderSelect)
+     printTable(orderArray)
    }
-  order.addEventListener('change', orderByAscent); //funcion recorre el objeto*/
+  order.addEventListener('change', orderBySelect); //funcion recorre el objeto*/
 
 
   if(userValue === 'all'){
