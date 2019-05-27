@@ -51,14 +51,14 @@ table{
 }
 
 footer {
-  background-color: #231f20;
+  background-color: #43425D;
   width: auto;
   height: 100%;
   text-align: center;
 }
 
 .logo {
-  width: 5%;
+  width: 15%;
   height: auto;
   padding: 3%;
 }
@@ -351,7 +351,7 @@ margin-block-end: 15%;
     }
 
 .logo{
-  width: 4%;
+  width: 15%;
   height: auto;
   padding: 1%;
   }
@@ -443,7 +443,7 @@ margin-block-end: 15%;
     }
 
     .logo {
-    width: 11%;
+    width: 15%;
     }
 
     .info {
@@ -478,7 +478,7 @@ margin-block-end: 15%;
     }
 
   .logo {
-    width: 10%;
+    width: 15%;
     height: auto;
     padding: 1%
   }
@@ -625,7 +625,7 @@ margin-block-start: 10%;
 
 
   .logo {
-    width: 10%;
+    width: 15%;
     height: auto;
     padding: 3%;
   }
