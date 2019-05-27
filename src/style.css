@@ -37,11 +37,10 @@ h2 {
 }
 
 p {
-  color: white;
-  font-family: sans-serif;
-  text-align: justify;
-  padding: 10%;
-  font-size: 14px;
+  color: #2E899F;
+  font-family: 'Sunflower', sans-serif;
+  text-align: center;
+  padding: 0%;
   margin: 0;
 }
 
@@ -59,7 +58,7 @@ footer {
 }
 
 .logo {
-  width: 15%;
+  width: 5%;
   height: auto;
   padding: 3%;
 }
@@ -95,10 +94,9 @@ footer {
 
 .menu-toogle {
   position: absolute;
-  line-height: 1.5;
   text-align: center;
   top: 4px;
-  right: 3%;
+  right: 34%;
   border-radius: 3px;
   background-color: transparent;
   transition: all .5s ease;
@@ -107,8 +105,8 @@ footer {
 
   .menu-toogle::before {
     content: "☰";
-   font-size: 33px;
-   color: #eb008b;
+    font-size: 33px;
+    color: #2e899f;
    }
 
 .tableData{
@@ -135,16 +133,14 @@ footer {
      position:fixed; /*Fijamos la hamburgues para que se desplace junto con el menú*/
    }
 
-.info {
-  background-color: #eb008b;
+.intro {
+background: -webkit-linear-gradient(top, white, #6DCDBF);
   width: auto;
   height: 100%;
-  margin-block-end: 0%;
+  margin-block-end: 22%;
   margin-block-start: 10%;
-  color: white;
-  text-align: justify;
+  text-align: center;
   font-family: sans-serif;
-  padding: 7%;
   font-kerning: none;
 }
 
@@ -210,8 +206,11 @@ border-radius: 6px;
   padding: 0.5%;
   }
 
-  .puntoImage{
-
+  .monograma{
+    width: 77%;
+    margin-block-start: 50%;
+    margin-left: 12%;
+    margin-block-end: 20%;
   }
 
 .consulta  {
@@ -265,6 +264,21 @@ border-radius: 6px;
   width: 100%;
   vertical-align: bottom;
   margin-top: 8%;
+}
+
+.quote{
+  color: #2E899F;
+  font-size: 209%;
+  font-family: 'Sunflower', sans-serif;
+  text-align: center;
+}
+
+#bold{
+  color: #2E899F;
+  font-size: 209%;
+  font-family: 'Sunflower', sans-serif;
+  font-weight: 700;
+  text-align: center;
 }
 
 #footer {
