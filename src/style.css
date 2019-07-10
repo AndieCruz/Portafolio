@@ -320,8 +320,6 @@ margin-block-end: 15%;
   padding: 1%;
   }
 
-
-
   .icon {
     display: inline-block;
     width: 10%;
@@ -330,15 +328,24 @@ margin-block-end: 15%;
   }
 
 
-
-
-
 .final{
   width: 47%;
   margin-top: 2%
 }
+.projectcover {
+    width: 20%;
+    border-radius: 3;
+    padding-left: 4%;
+}
 
+.contactme {
+    display: inline-block;
+    width: 6%;
+    padding: 2%;
+    margin-block-end: 6%;
+  }
 
+}
 
 @media (min-width:1280px) and (max-width: 1380px){
 
@@ -387,6 +394,24 @@ margin-block-end: 3%;
 .quote{
   margin-block-end: 9%;
 }
+
+.projectcover {
+    width: 20%;
+    border-radius: 3;
+    padding-left: 4%;
+}
+
+.design{
+  width: 29%;
+  float: left;
+  margin-left: 5%;
+}
+.tools {
+    display: inline-block;
+    width: 8%;
+    padding: 4%;
+    margin-block-end: 3%;
+  }
 }
 
 @media (min-width: 1024px) and (max-width: 1280px) {
