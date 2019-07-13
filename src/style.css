@@ -201,6 +201,13 @@ margin-block-end: 15%;
   margin-block-end: 0%;
 }
 
+.design{
+  width: 100%;
+  margin-block-start: 5%;
+  margin-block-end: 0%;
+
+}
+
 .projectcover{
   width: 80%;
   border-radius: 5%;
