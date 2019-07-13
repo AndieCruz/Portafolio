@@ -412,6 +412,17 @@ margin-block-end: 3%;
     padding: 4%;
     margin-block-end: 3%;
   }
+
+  .back {
+      padding: 2%;
+    }
+    .cover {
+        width: 100%;
+        margin-block-start: 0%;
+        margin-block-end: 0%;
+      }
+
+
 }
 
 @media (min-width: 1024px) and (max-width: 1280px) {
