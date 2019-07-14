@@ -352,6 +352,18 @@ margin-block-end: 15%;
     margin-block-end: 6%;
   }
 
+  .prototype {
+    display: inline-block;
+    width: 25%;
+    padding: 2%;
+    margin-block-start: 0%;
+    margin-block-end: 4%;
+  }
+
+  .cover{
+    display: none;
+  }
+
 }
 
 @media (min-width:1280px) and (max-width: 1380px){
