@@ -242,6 +242,10 @@ margin-block-end: 15%;
   margin-block-end: 8%;
 }
 
+.user{
+  width: 100%;
+}
+
 #bold{
   color: #2E899F;
   font-size: 209%;
@@ -324,7 +328,11 @@ margin-block-end: 15%;
 .logo{
   width: 5%;
   height: auto;
-  padding: 1%;
+  padding: .5%;
+  }
+
+  .back{
+    padding: 13px;
   }
 
   .icon {
@@ -409,6 +417,10 @@ margin-block-end: 3%;
 
   }
 
+  .back{
+    padding: 13px;
+  }
+
   .aboutme{
     width: 50%;
     margin-block-start: 20%;
@@ -483,6 +495,10 @@ margin-block-end: 3%;
     width: 15%;
     height: auto;
     padding: 1%
+  }
+
+  .back{
+    padding: 13px;
   }
 
 .info{
