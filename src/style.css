@@ -364,6 +364,31 @@ margin-block-end: 15%;
     display: none;
   }
 
+  .user{
+    width: 100%;
+  }
+
+li{
+  margin-left: 10%;
+}
+
+ul{
+  margin-block-end: 2%;
+}
+
+  #parraph{
+    text-align: left;
+    padding-left: 7%;
+    padding-right: 7%;
+    margin: 3%;
+  }
+
+  #skills{
+    margin-left: 10%;
+    padding: 0px;
+    margin-block-end: 0%;
+  }
+
 }
 
 @media (min-width:1280px) and (max-width: 1380px){
