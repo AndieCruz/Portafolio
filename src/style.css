@@ -247,8 +247,7 @@ li {
 
 .cover {
   width: 102%;
-  margin-block-start: 10%;
-  margin-block-end: 0%;
+  margin-block-start: 0%;
 }
 
 .tools {
@@ -263,6 +262,10 @@ li {
   width: 60px;
   padding: 7px;
   margin-block-end: 8%;
+}
+
+.user{
+  width: 100%;
 }
 
 .prototype {
@@ -285,6 +288,7 @@ li {
   color: #43425d;
   font-family: "Saira", sans-serif;
   text-align: justify;
+  margin: 5%;
 }
 
 #footer {
@@ -311,7 +315,7 @@ li {
   color: #43425d;
   font-family: "Sunflower", sans-serif;
   font-weight: bolder;
-
+  margin: 5%;
   text-align: left;
 
   font-size: 120%;
@@ -419,7 +423,7 @@ ul{
   }
 
   #skills{
-    margin-left: 10%;
+    margin-left: 8%;
     padding: 0px;
     margin-block-end: 0%;
   }
