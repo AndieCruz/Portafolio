@@ -7,136 +7,196 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Andie Cruz</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css?family=Saira+Semi+Condensed:400,700|Sunflower:300,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Saira+Semi+Condensed:400,700|Sunflower:300,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="shortcut icon" href="images/favicon1.ico" type="image/x-icon">
-<link rel="icon" href="images/favicon1.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon1.ico" type="image/x-icon">
 </head>
 
 <body>
-  <div id="root">
+  <div id="root" class="px-1">
     <header>
 
-        <img src="images/logo.png" alt="AndieCruz" class="logo">
+      <img src="images/logo.png" alt="AndieCruz" class="logo">
 
-        <input type="checkbox" class="checkbox" id="menu-toogle"/>
-        <label for="menu-toogle" class="menu-toogle"></label>
-          <nav class="sidebar">
-            <ul class="menu_list">
-              <li><a href="#about" class="nav__item current">SOBRE MÍ</a></li>
-              <li><a href="#portfolio" class="nav__item">PROYECTOS</a></li>
-              <li><a href="#contact" class="nav__item">CONTACTO</a></li>
-            </ul>
-          </nav>
+      <input type="checkbox" class="checkbox" id="menu-toogle" />
+      <label for="menu-toogle" class="menu-toogle"></label>
+      <nav class="sidebar">
+        <ul class="menu_list">
+          <li><a href="#about" class="nav__item current">SOBRE MÍ</a></li>
+          <li><a href="#portfolio" class="nav__item">PROYECTOS</a></li>
+          <li><a href="#contact" class="nav__item">CONTACTO</a></li>
+        </ul>
+      </nav>
 
     </header>
 
-    <section id="intro" class="intro">
-      <figure><img src="images/Inicial_logo.png" alt="AndieCruz" class="monograma"> </figure>
 
-        <p class ="quote"> UX <strong> DESIGNER </strong></p>
-        <p> “La gente ignora al diseño que los ignora”. <br> -Frank Chimero </p>
+
+    <section id="intro" class="intro">
+
+      <div class="container-fluid">
+        <div class="row ">
+          <div class="col-sm text-center">
+            <figure><img src="images/Inicial_logo.png" alt="AndieCruz" class="img-fluid monograma"> </figure>
+            <p class="quote "> UX <strong> DESIGNER </strong></p>
+            <p class="p-intro "> “La gente ignora al diseño que los ignora”. <br> -Frank Chimero </p>
+          </div>
+        </div>
+      </div>
+
     </section>
 
+    <section id="about" class="about text-justify">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col pt-4 pb-1">
+            <figure><img src="images/SobreMi.png" alt="AndieCruz" class="img-about-me"> </figure>
+          </div>
+          <div class="col p-0 ">
+            <p class="quote mt-3"> SOBRE <strong> MÍ </strong></p>
+            <p id="parraph">
 
-    <section id="about" class="about">
-      <figure><img src="images/SobreMi.png" alt="AndieCruz" class="aboutme"> </figure>
-    <p class ="quote"> SOBRE <strong> MÍ </strong></p>
-      <p id="parraph">
+              ¡Hola! Soy Andrea Cruz, UX Designer, egresada de Laboratoria y de la Facultad
+              de Artes y Diseño de la UNAM. Me fascina la idea de diseñar experiencias
+              para los usuarios, convertirlas en realidad con soluciones innovadoras y
+              con ayuda de la tecnología lograr crear experiencias memorables.
+            </p>
+          </div>
+        </div>
+      </div>
 
-      ¡Hola! Soy Andrea Cruz, UX Designer, egresada de Laboratoria y de la Facultad
-      de Artes y Diseño de la UNAM. Me fascina la idea de diseñar experiencias
-      para los usuarios, convertirlas en realidad con soluciones innovadoras y
-      con ayuda de la tecnología lograr crear experiencias memorables.
-      </p>
-      <p id="skills"> SKILLS </p>
+
+      <p id="skills" class="py-4"> SKILLS </p>
 
       <p id="parraph"> Me apasiona poder aprender de todo, adquirir nuevo conocimiento
-      sobre cualquier cosa. Estudié Diseño porque me gusta
-      resolver problemas de manera creativa. Las 3 fortalezas que menciono a
-      continuación son las que me definen hasta el momento.
-      <br>
-      <br>
-      TRABAJO EN EQUIPO <br>
-      Me gusta trabajar en equipo porque creo que muchas ideas aportan más a una solución acertiva.
-      Escuchar otras opiniones, ayuda al momento de tomar decisiones
-      pensadas en la problemática del diseño o reto. También creo importante
-      el manejar tiempos, ser equitativa y tener una gran actitud.
-      <br>
-      <br>
-      CREATIVIDAD Y RESOLUCIÓN DE PROBLEMAS <br>
-      Durante mi paso por Laboratoria, aprendí a resolver problemas a través
-      de investigación de usuarios y metodologías ágiles. A lo largo de los retos de diseño,
-      mi proceso de ideación es la más enriquecedora y en donde tengo mayor libertad
-      de crear soluciones centradas en el usuario.
-      <br>
-      <br>
-      DISEÑO VISUAL<br>
-      Debido a mi amor por el diseño visual y mi apreciación por los detalles
-      he desarrollado esta habilidad que a lo largo de mi formación, aprendí
-      a manejar herramientas como Adobe Ilustrator, InDesign, Premiere, entre otros.
-      Lo que me ayuda a crear y facilitar a los usuarios prototipos de alta fidelidad
-      para que sean testeados.
-      <br>
-    </p>
+        sobre cualquier cosa. Estudié Diseño porque me gusta
+        resolver problemas de manera creativa. Las 3 fortalezas que menciono a
+        continuación son las que me definen hasta el momento.</p>
+      <div class="container-fluid p-0 ">
+        <div class="card-deck ">
+          <div class="card border-white mb-3">
+            <div class="card-body text-info p-0">
+              <p class="card-title" id="parraph">TRABAJO EN EQUIPO</p>
+              <p id="parraph" class="card-text ">Me gusta trabajar en equipo porque creo que muchas ideas aportan más
+                a una
+                solución acertiva.
+                Escuchar otras opiniones, ayuda al momento de tomar decisiones
+                pensadas en la problemática del diseño o reto. También creo importante
+                el manejar tiempos, ser equitativa y tener una gran actitud.</p>
+            </div>
+          </div>
 
-      <p id="skills"> CULTURA ÁGIL </p>
-      <figure>
-        <img src="images/designThinking.png" alt="DesignThinking" class="design">
-      </figure>
-      <p id="parraph">DESIGN THINKING
-      <br>
-      Aplico la metodología Design Thinking a mis proyectos para generar ideas innovadoras
-      ya que se centra en dar eficacia en entender y dar solución a las necesidades reales de los usuarios.
-      Me parece que es un método super efectivo y ágil, ya que no siempre es lineal,
-      puedes regresar a cualquier punto del proceso si lo crees oportuno.
-    </p>
+          <div class="card border-white mb-3">
+            <div class="card-body text-info p-0">
+              <p class="card-title" id="parraph" style="
+              text-align: -webkit-left;
+          ">CREATIVIDAD Y RESOLUCIÓN DE PROBLEMAS</p>
+              <p id="parraph" class="card-text ">Durante mi paso por Laboratoria, aprendí a resolver problemas a
+                través
+                de investigación de usuarios y metodologías ágiles. A lo largo de los retos de diseño,
+                mi proceso de ideación es la más enriquecedora y en donde tengo mayor libertad
+                de crear soluciones centradas en el usuario.</p>
+            </div>
+          </div>
+
+          <div class="card border-white mb-3">
+            <div class="card-body text-info p-0">
+              <p class="card-title" id="parraph">DISEÑO VISUAL</p>
+              <p id="parraph" class="card-text ">Debido a mi amor por el diseño visual y mi apreciación por los
+                detalles
+                he desarrollado esta habilidad que a lo largo de mi formación, aprendí
+                a manejar herramientas como Adobe Ilustrator, InDesign, Premiere, entre otros.
+                Lo que me ayuda a crear y facilitar a los usuarios prototipos de alta fidelidad
+                para que sean testeados.</p>
+            </div>
+          </div>
+        </div>
 
 
 
+        <div class="container-fluid p-0">
+          <div class="row">
+            <div class="col col pb-3 pt-1 px-0">
+              <p id="skills" class="pl-3 py-5"> CULTURA ÁGIL </p>
+              <figure>
+                <img src="images/designThinking.png" alt="DesignThinking" class="img-think mt-2 pt-1">
+              </figure>
+            </div>
+            <div class="col" style="
+            margin-top: 10vw;
+              ">
 
 
-      <p id="skills"> HERRAMIENTAS </p>
-      <figure>
-        <img src="images/experience.svg" alt="Adobe Xd" class="tools">
-        <img src="images/css-3.svg" alt="CSS" class="tools">
-        <img src="images/illustrator.svg" alt="Adobe illustrator" class="tools">
-        <img src="images/html-5-logo.svg" alt="HTML" class="tools">
-        <img src="images/premier.svg" alt="Premiere" class="tools">
-      </figure>
+
+              <p id="parraph">DESIGN THINKING</p>
+              <p id="parraph">
+
+
+                Aplico la metodología Design Thinking a mis proyectos para generar ideas innovadoras
+                ya que se centra en dar eficacia en entender y dar solución a las necesidades reales de los usuarios.
+                Me parece que es un método super efectivo y ágil, ya que no siempre es lineal,
+                puedes regresar a cualquier punto del proceso si lo crees oportuno.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid p-0">
+
+          <p id="skills" class="pb-4 mt-5"> HERRAMIENTAS </p>
+          <div class="container-fluid p-0">
+            <img src="images/experience.svg" alt="Adobe Xd" class="tools">
+            <img src="images/css-3.svg" alt="CSS" class="tools">
+            <img src="images/illustrator.svg" alt="Adobe illustrator" class="tools">
+            <img src="images/html-5-logo.svg" alt="HTML" class="tools">
+            <img src="images/premier.svg" alt="Premiere" class="tools">
+          </div>
+        </div>
 
     </section>
 
-    <section id="portfolio" class="portfolio">
-      <p class ="quote"> PROYE<strong>CTOS</strong></p>
+    <section id="portfolio" class="portfolio pt-5">
+      <p class="quote pt-5"> PROYE<strong>CTOS</strong></p>
       <figure>
-       <a href="proyecto1.html"><img src="images/portadaProyectoUno.png" alt="AppFinanciera" class="projectcover"></a>
-       <a href="proyecto2.html"><img src="images/portadaproyectoDos.png" alt="Darjeeling" class="projectcover"></a>
+        <a href="proyecto1.html"><img src="images/portadaProyectoUno.png" alt="AppFinanciera" class="projectcover"></a>
+        <a href="proyecto2.html"><img src="images/portadaproyectoDos.png" alt="Darjeeling" class="projectcover"></a>
         <a href="proyecto3.html"><img src="images/portadaProyectoTres.png" alt="Ticketmaster" class="projectcover"></a>
-     </figure>
-
-
+      </figure>
     </section>
 
-
-      <section id="contact" class="contact">
-      <p class ="quote"> CONT<strong>ACTO</strong></p>
+    <section id="contact" class="contact pt-5">
+      <p class="quote mb-5"> CONT<strong>ACTO</strong></p>
       <figure>
-      <a title="LinkedIn" href="https://www.linkedin.com/in/andiecruz/"><img src="images/linkedin.svg" alt="LinkedIn" class="contactme"></a>
-      <a title="LinkedIn" href="https://github.com/AndieCruz"><img src="images/logo-de-github.svg" alt="Github" class="contactme"></a>
+        <a title="LinkedIn" href="https://www.linkedin.com/in/andiecruz/"><img src="images/linkedin.svg" alt="LinkedIn"
+            class="contactme"></a>
+        <a title="LinkedIn" href="https://github.com/AndieCruz"><img src="images/logo-de-github.svg" alt="Github"
+            class="contactme"></a>
       </figure>
-      </section>
+    </section>
 
-      <footer>
-        <figure>
-        <p id="footer"> Página desarrollada por Andie Cruz. 2019 </p>
-        <img src="images/final.png" alt="PuntoMuerto" class="final">
-      </figure>
+    <footer class="pb-1">
+
+      <p id="footer" class="pt-4"> Página desarrollada por Andie Cruz. 2019 </p>
+      <img src="images/final.png" alt="PuntoMuerto" class="final">
+
     </footer>
-  </div>
 
 
-  <script src="main.js"></script>
-  <script src="data.js"></script>
+
+
+    <script src="main.js"></script>
+    <script src="data.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
