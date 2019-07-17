@@ -151,7 +151,7 @@ li {
   padding-left: 5%;
   height: auto;
   margin-top: 0%;
-  padding-top: 80px;
+  padding-top: 2vw;
 }
 
 .projects {
@@ -411,6 +411,11 @@ li{
   margin-left: 10%;
 }
 
+.backgroud-skill{
+  background:#607d8b36;
+  padding-bottom: 150px;
+}
+
 ul{
   margin-block-end: 5%;
 }
@@ -439,6 +444,10 @@ ul{
     font-size: 17px;
     text-align: CENTER;
     margin-block-end: 3%;
+  }
+  .backgroud-skill{
+    background:#607d8b36;
+    padding-bottom: 150px;
   }
 
   .about {
@@ -506,6 +515,10 @@ margin-right: 3%;
 @media (min-width: 1024px) and (max-width: 1280px) {
   header {
     width: 100%;
+  }
+  .backgroud-skill{
+    background:#607d8b36;
+    padding-bottom: 150px;
   }
 
   .p-0 {
@@ -576,6 +589,11 @@ margin-right: 3%;
     width: 100%;
   }
 
+  .backgroud-skill{
+    background:#607d8b36;
+    padding-bottom: 150px;
+  }
+
   .projectcover {
     width: 20%;
     border-radius: 3;
@@ -617,6 +635,10 @@ margin-right: 3%;
     width: 100%;
   }
 
+  .backgroud-skill{
+    background:white;
+    padding-bottom: 2px;
+  }
   .projectcover {
     width: 80%;
     border-radius: 3;
